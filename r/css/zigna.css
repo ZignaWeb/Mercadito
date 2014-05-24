@@ -1,0 +1,349 @@
+@font-face {
+	font-family: "Regular";
+	src: url('../../typo/AlegreyaSans-Regular.eot');
+	src: local('☺'), url('../../typo/AlegreyaSans-Regular.woff') format('woff'), 
+	url('../../typo/AlegreyaSans-Regular.ttf') format('truetype'), 
+	url('../../typo/AlegreyaSans-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/*------------------------------MAIN------------------------------*/
+html{
+		 height:100% !important;
+		 }
+body {
+	
+			font-family:"Regular",Georgia, "Times New Roman", Times, serif;
+			min-height:100% !important; 
+			padding-bottom:182px !important; 
+			height:auto;
+			background:#c1c1b2
+			}
+footer{ 
+			 position:absolute !important; 
+			 bottom:0px !important;  
+			 width:100%;
+			 }				
+				
+.borde{
+			 border:black solid 1px;
+			 }
+.orbit-container img{ 
+										 width:100%;
+										 }
+.clear{ 
+			 clear:both;
+			 }
+.titulo{
+	 			max-height:50px; 
+				width:auto; 
+				margin:15px auto
+				}				 
+.no-margin{ 
+					 margin:0px;
+					 }
+.no-padding{ 
+						padding:0px;
+						}
+.deco li{ 
+					padding:5px; 
+					text-align:center;
+					}
+.list-padding li{ 
+								 padding-bottom:10px;
+								 }
+.fontMedium { 
+							font-size:20px;
+						}
+.column { 
+					padding-bottom:15px;
+				}
+				
+/*------------------------------MAIN------------------------------*/
+
+
+/*------------------------------HEADER------------------------------*/
+				
+header { 
+					background:url(../img/madera.gif)
+			 }
+header ul{ 
+					 width:100%; 
+					 min-height:55px !important ;
+					}
+header ul li{ 
+							margin-top:10px !important;
+						}
+header > a { 
+						 height:120px
+						}
+header > a img { 
+								 margin:15px auto auto 50px
+								}
+.menu-toggle-button{ 
+										 color:white
+										}
+.menu-toggle-button.activ{ 
+													 color:
+													}
+	
+	
+header ul.menu-list li a{ 
+													color:#FFF
+												}
+header ul.menu-list li:last-child { 
+																		margin-right:10%
+																	}
+																	
+/*------------------------------HEADER------------------------------*/
+
+
+/*------------------------------HOME------------------------------*/
+																	
+.pizarra{ 
+	background:url(../img/pizarra.gif); 
+	background-size:auto 372px ; 
+	background-repeat:repeat-x 
+										}
+.pizarra  ul  li { 
+									 height:372px;
+									}
+.pizarra  ul  li img { 
+											 height:360px; width:200px; margin-left:10%;
+											}
+.home > ul:nth-child(1) { 
+	text-align:center;
+		
+ }											
+.home > ul:nth-child(1)  > li	{
+	display:inline-block;	
+ }
+
+.home > ul:nth-child(2) >  li { 
+																										padding:15px 0; 
+																										height:105px
+																									}
+.home > ul:nth-child(2) >  li:nth-child(1) { 
+																																 background:url(../img/1.png) left no-repeat
+																																}
+.home > ul:nth-child(2) >  li:nth-child(2) { 
+																																 background:url(../img/2.png) left no-repeat
+																																}
+.home > ul:nth-child(2) >  li:nth-child(3) { 
+																																 background:url(../img/3.png) left no-repeat
+																																}
+.home > ul:nth-child(2) >  li h2 { 
+																											 font-size:1.3125rem
+																										  }
+.home > ul:nth-child(2) >  li p { 
+																											font-size:0.8rem
+																										}
+																							
+
+/*--------------------MAP--------------------*/
+
+.mapa {
+				border:#50504c 2px dashed; 
+				text-align:center; 
+				padding-bottom:0; 
+				margin-bottom:70px
+			}
+.mapa div{
+					padding:15px 0; 
+					margin:0
+					}
+.mapa div p{ 
+						 margin-bottom:0; 
+						 padding:0
+						}
+.mapa div:nth-child(3){
+												margin:0; 
+												padding:0
+											}
+.mapa div:first-child{
+											 padding:4px 0; 
+											 margin:11px 0; 
+											 border-right:#50504c dashed 2px
+											}
+/*--------------------MAP--------------------*/
+											
+/*------------------------------HOME------------------------------*/
+
+
+/*------------------------------CONTACTO------------------------------*/
+											
+.contacto .mapa div:first-child {
+																	padding:4px 0; 
+																	margin:11px 0; 
+																	border-right:none; 
+																	margin-bottom:0
+																} 
+
+
+.contacto div form input { 
+ 													border-radius:7px !important;
+												 }
+.contacto div form input[type=submit] {
+	 																			border-radius:10px !important;
+														 					}
+.contacto div form textarea { 
+															min-height:100px;
+															border-radius:7px !important;
+														}
+									
+.contacto div form ::-webkit-input-placeholder {
+   																							color: #783A27;
+																							 }
+.contacto > div:nth-child(2) {
+																										 margin-right:50px;
+	}
+.contacto > ul {	
+																										border-left: #50504c 2px dashed;
+																										height: 315px;
+																										padding-left: 50px;
+																										list-style:none;
+																										padding-top:5%;
+ 																		}
+.contacto > ul li:nth-child(1) { 
+																									 font-weight:bold}																		
+.contacto > ul li,
+.contacto > ul li p,
+.contacto > ul li div{
+																				padding:0;
+																			}
+
+																									
+.contacto > ul > li > div > img{
+																										 margin-right:10px
+																										}
+
+.contacto form { position:relative;}
+.contacto #enviando { display:none;position:absolute; top:0; bottom:0; left:0; right:0; background: rgba(193,193,178,0.8)}
+.contacto #enviando span { position:absolute; left:30%; right:30%; top:40%; text-align:center; display:block; padding:2%; background:#FFF; border-radius:5px;}
+																																									
+/*------------------------------CONTACTO------------------------------*/
+
+
+/*------------------------------FOOTER------------------------------*/
+																
+footer { 
+				 background:url(../img/madera-FOOTER.gif) !important; 
+				 height:auto
+				}
+footer > div > a img{
+											margin-top:30px 
+										}
+footer ul li{
+							list-style:none; 
+							color:#BDBDAC ; 
+							height:25px; margin: auto 0 !important; 
+							padding:0 !important
+						}
+footer > ul > li div  { 
+												margin:0 !important; 
+												padding:0 !important;
+											}
+footer > ul > li  p {
+											margin:0 !important; 
+											padding:0 !important;
+										}
+footer > ul > li div img { 
+													 margin-right:5px !important; 
+													 height:25px
+													}
+footer > ul{ 
+						 margin:30px 0 0 0 !important; 
+						 padding:0 !important
+						}
+footer > div{
+							margin:0 !important; 
+							padding:0 !important
+						}
+/*------------------------------FOOTER------------------------------*/
+
+
+
+
+
+
+
+
+ 
+	
+	
+@media only screen  and (min-width: 770px) {
+	
+		
+																						 header ul { 
+																						 						 background:url(../img/menu.gif) !important  
+																												}
+																						 #demo-menu > li:nth-child(1) > a { 
+																						 																		margin-left:50px
+																																							}
+																						
+
+																						}
+@media only screen  and (min-width: 670px) {
+																						.pizarra  .orbit-caption{ 
+																																			background:none !important; 
+																																			position:absolut;top:0; 
+																																			left:35%; 
+																																			display:table;
+																																			height:372px;
+																																		 }
+																						.pizarra  ul  li  .orbit-caption > div{ 
+																																										display:table-row
+																																									}
+																						.pizarra  ul  li  .orbit-caption > div >div{ 
+																																												 display:table-cell; 
+																																												 vertical-align:middle
+																																												}
+																						.pizarra  ul  li  .orbit-caption > div >div p{ 
+																																													 color:white;
+																																													 width:60%;																																												
+																																													}
+																						.pizarra  ul  li  .orbit-caption > div >div h1{ 
+																																													  color:white; font-weight:bold
+																																													 }
+	
+																						}
+																						
+	@media only screen  and (max-width: 985px) {
+																							.home > ul:nth-child(2) >  li:nth-child(1) { 
+																																																							 background:url(../img/1-small.png) left no-repeat !important
+																																																						 }
+																							.home > ul:nth-child(2) >  li:nth-child(2) { 
+																																																							 background:url(../img/2-small.png) left no-repeat !important
+																																																							}
+																							.home > ul:nth-child(2) >  li:nth-child(3) { 
+																																																							 background:url(../img/3-small.png) left no-repeat !important
+																																																							}
+																						
+																							.home > ul:nth-child(2) >  li h2 { 
+																																																		 font-size:1rem !important
+																																																		}
+																							.home > ul:nth-child(2) >  li p { 
+																																																		font-size:0.7rem !important
+																																																	}
+																							.home > div p{ 
+																																								 font-size:0.8rem !important
+																																								}
+																						 }
+	@media only screen  and (max-width: 670px) {
+																							 footer > ul,footer > div a img{ 
+																							 																 margin-top:0 !important;
+																																							}
+																							 footer > div { 
+																							 								margin-top:5px !important;
+																														}
+																							 footer{ 
+																							 				 padding-bottom:0 !important 
+																											}
+																							  footer > div > a > img { 
+																							 																	width:150px; height:90px
+																																							}
+																							.contacto > ul {	
+																																										border-left: none;
+																																									}
+																							}
+	

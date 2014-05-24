@@ -1,0 +1,3 @@
+[26-Mar-2014 18:11:00 America/Montreal] PHP Deprecated:  Function ereg() is deprecated in /home/mercadit/public_html/r/code/sendmail.php on line 32
+[26-Mar-2014 18:15:59 America/Montreal] PHP Deprecated:  Function ereg() is deprecated in /home/mercadit/public_html/r/code/sendmail.php on line 32
+[26-Mar-2014 18:21:09 America/Montreal] PHP Warning:  preg_match() [<a href='function.preg-match'>function.preg-match</a>]: No ending delimiter '^' found in /home/mercadit/public_html/r/code/sendmail.php on line 32
