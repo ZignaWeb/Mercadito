@@ -19,6 +19,21 @@
 # dependency: poblar con los datos de a una tabla de la autogestion
 # array		: poblar con los datos de un array definido en data.php
 */
+
+/*
+*Constantes para SEARCH
+*/
+define("searchable", 1);
+define("nosearchable", 0);
+
+/*
+*Constantes para HIDE
+*/
+define("showinline", 0);
+define("showpop", 1);
+define("noshow", 2);
+
+
 $cpa = array (
 	"cpa" => array (
 		"t" => $inline[$lang]["cp"],
@@ -109,8 +124,8 @@ $secciones=array(
 			"medias" => array ( "db" => "medias", "menu" => "context", "t" =>$inline[$lang]["medias"], "p" => 1)
 		),
 		"c" => array (
-			"nombre" => array( "db" => "nombre", "t" => "Nomre del Rubro", "type" => "input", "val" => "varchar", "force" => 1, "search" => 1),
-			"desc" => array ("db" => "desc", "t" => $inline[$lang]["desc"], "type" => "textarea", "val" => "text", "force" => 1, "search" => 0),
+			"nombre" => array( "db" => "nombre", "t" => "Nomre del Rubro", "type" => "input", "val" => "varchar", "force" => 1, "search" => searchable),
+			"desc" => array ("db" => "desc", "t" => $inline[$lang]["desc"], "type" => "textarea", "val" => "text", "force" => 1, "search" => nosearchable),
 			"mostrar" => array ( "db" => "mostrar", "t" => $inline[$lang]["visibility"], "val" => "number", "type" => "select", 
 					"options" => array (1 => $inline[$lang]["Show"], 0 => $inline[$lang]["NoShow"])
 					),
@@ -179,12 +194,12 @@ $secciones=array(
 	"adm" => array (
 		"db" => "ag_admins",
 		"t" => "Admins",
-		"p" => 99,
+		"p" => 1,
 		"a" => array ( 
-			"listar" => array ( "db" => "listar", "menu" => "menu", "t" =>$inline[$lang]["listar"], "p" => 99),
-			"editar" => array ( "db" => "editar", "menu" => "context", "t" =>$inline[$lang]["editar"], "p" => 99),
+			"listar" => array ( "db" => "listar", "menu" => "menu", "t" =>$inline[$lang]["listar"], "p" => 1),
+			"editar" => array ( "db" => "editar", "menu" => "context", "t" =>$inline[$lang]["editar"], "p" => 1),
 			"delete" => array ( "db" => "delete", "menu" => "context", "t" =>$inline[$lang]["delete"], "p" => 99),
-			"cargar" => array ( "db" => "cargar", "menu" => "menu", "t" =>$inline[$lang]["cargar"], "p" => 2),
+			"cargar" => array ( "db" => "cargar", "menu" => "menu", "t" =>$inline[$lang]["cargar"], "p" => 1),
 			"export" => array ( "db" => "export", "menu" => "menu", "t" =>$inline[$lang]["export"], "p" => 99)
 			),
 		// 	usr	psw	email	level
