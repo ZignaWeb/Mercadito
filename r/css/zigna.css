@@ -261,13 +261,29 @@ footer > div{
 						}
 /*------------------------------FOOTER------------------------------*/
 /*------------------------------IFRAME------------------------------*/
-iframe{
+iframe.chat{
+	display: block;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease-out;
+	height: 0px ;
+	overflow: hidden;
 	width: 451px;
-	height: 300px;
 	position: fixed;
 	bottom: 0;
 	right: 0;
-	z-index: 1;
+	z-index: 100;
+}
+.minimize{
+	display:none;
+	height: 15px;
+width: 15px;
+background: red;
+position: fixed;
+bottom: 325px;
+right: 30px;
+z-index: 500;
+border-radius: 10px;
+color: #FFF;
 }
 /*------------------------------IFRAME------------------------------*/
 

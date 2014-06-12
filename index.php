@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="r/css/foundation.css" />
     <link rel="stylesheet" href="r/css/daisynav.css" />    
      <link rel="stylesheet" href="r/css/zigna.css" />
-    <script src="js/vendor/modernizr.js"></script>    
+    <script src="js/vendor/modernizr.js"></script> 
+    <script src="js/vendor/jquery.js"></script>   
   </head>
   <style>
   	
@@ -35,8 +36,8 @@
                           <li><a href="#novedades">Novedades</a></li>
                           <li><a href="#quienessomos">Quienes somos</a></li>
                           <li><a href="#contacto">Contacto</a></li>
-                          <li class=" right  hide-for-small-only"><a href="#">¡Hace tu pedido online!</a></li>
-                           <li class=" show-for-small-only "><a href="#">¡Hace tu pedido online!</a></li>
+                          <li class=" right  hide-for-small-only"><a class="bchat" href="www.zigna.com.ar">¡Hace tu pedido online!</a></li>
+                           <li class=" show-for-small-only "><a  class="bchat"  href="#">¡Hace tu pedido online!</a></li>
                                         
                         </ul>            
             <!-- ************* end-NAV ************** -->            
@@ -44,7 +45,12 @@
 <div id="container">
 
 </div>   
-<iframe src="http://www.buzzchat.com.ar/client"></iframe>
+<iframe src="http://www.buzzchat.com.ar/client" class="chat">
+
+</iframe>
+ <div class="minimize">-</div>
+
+
      
    
 <footer class="small-12 column" >
@@ -110,6 +116,21 @@
 				  		$("#container").load(loadUrl);
             }
     </script>    
+    <script type="text/javascript">
+				$(".bchat").click(function(event){
+					event.preventDefault();
+					$(".chat").css("opacity","1").css("height","350px");
+					$(".minimize").css("display","block");
+				});
+				$(".minimize").click(function(event){
+					event.preventDefault();
+					$(".chat").css("height","34px");
+					$(".minimize").css("bottom","9px");
+				});
+					
+				
+				
+		</script>
 	
   </body>
 </html>
