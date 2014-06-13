@@ -13,7 +13,7 @@
             	<img class="right" src="r/img/tel.png" alt="telefono" />
             </div>
             <p class="small-11 column">
-            	Tel.: 414323 - 4824130
+            	Tel.: (0351) 4814323
             </p>
          
           </li>

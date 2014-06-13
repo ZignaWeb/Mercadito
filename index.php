@@ -48,8 +48,8 @@
 <iframe src="http://www.buzzchat.com.ar/client" class="chat">
 
 </iframe>
- <div class="minimize">-</div>
-
+ 		<div class="minimize"></div>
+ 		<div class="close"></div>
 
      
    
@@ -68,7 +68,7 @@
             	<img class="right" src="r/img/tel.png" alt="telefono" />
             </div>
             <p class="small-11 column">
-            	Tel.: 414323 - 4824130
+            	Tel.:(0351) 4814323
             </p>
          
           </li>
@@ -117,15 +117,36 @@
             }
     </script>    
     <script type="text/javascript">
+				var mini=0;
 				$(".bchat").click(function(event){
 					event.preventDefault();
 					$(".chat").css("opacity","1").css("height","350px");
 					$(".minimize").css("display","block");
+					$(".close").css("display","block");
+				
+					document.getElementById("#goback").css("display","block");
+					$("#logout").css("display","block");
 				});
+				
 				$(".minimize").click(function(event){
 					event.preventDefault();
-					$(".chat").css("height","34px");
-					$(".minimize").css("bottom","9px");
+					 if(mini==0){
+						mini=1;
+						$(".chat").css("height","34px");
+						$(".minimize").css("bottom","7px");
+						$(".close").css("bottom","7px");
+					}else if(mini==1){
+						mini=0;
+						$(".chat").css("height","350px");
+						$(".minimize").css("bottom","323px");
+						$(".close").css("bottom","323px");
+					};
+
+				});
+				$(".close").click(function(event){
+					$(".chat").css("opacity","0").css("height","0px");
+					$(".minimize").css("display","none");
+					$(".close").css("display","none");
 				});
 					
 				

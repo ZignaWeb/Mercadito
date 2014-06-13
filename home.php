@@ -91,7 +91,7 @@
           
           <div class="small-12 column mapa">
           	<div class="small-6 column">
-            	<p>Llamanos al 0351 156 156</p>
+            	<p>Llamanos al (0351)4814323</p>
             </div>
             <div class="small-6 column">
             	<p>Chatea con un vendedor</p>
