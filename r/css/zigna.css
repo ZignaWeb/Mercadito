@@ -262,6 +262,7 @@ footer > div{
 /*------------------------------FOOTER------------------------------*/
 /*------------------------------IFRAME------------------------------*/
 iframe.chat{
+	border:none;
 	display: block;
 	opacity: 0;
 	-webkit-transition: opacity 0.3s ease-out;
@@ -282,7 +283,7 @@ logout{
 	height: 20px;
 	width: 20px;
 	position: fixed;
-	bottom: 323px;
+	bottom: 325px;
 	z-index: 500;
 
 	}

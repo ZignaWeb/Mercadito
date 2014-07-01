@@ -9,6 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mercadito Web</title>
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="r/css/foundation.css" />
     <link rel="stylesheet" href="r/css/daisynav.css" />    
      <link rel="stylesheet" href="r/css/zigna.css" />
@@ -115,6 +116,7 @@
 
 				  		$("#container").load(loadUrl);
             }
+						
     </script>    
     <script type="text/javascript">
 				var mini=0;
@@ -132,14 +134,14 @@
 					event.preventDefault();
 					 if(mini==0){
 						mini=1;
-						$(".chat").css("height","34px");
-						$(".minimize").css("bottom","7px");
-						$(".close").css("bottom","7px");
+						$(".chat").css("height","31px");
+						$(".minimize").css("bottom","6px");
+						$(".close").css("bottom","6px");
 					}else if(mini==1){
 						mini=0;
 						$(".chat").css("height","350px");
-						$(".minimize").css("bottom","323px");
-						$(".close").css("bottom","323px");
+						$(".minimize").css("bottom","325px");
+						$(".close").css("bottom","325px");
 					};
 
 				});
@@ -149,8 +151,21 @@
 					$(".close").css("display","none");
 				});
 					
+			$(document).ready(function(e) {
+				checkOnline();
+				countdown();
 				
+				function checkOnline () {
+					$.get("http://buzzchat.com.ar/client/checkifonlineadmin.php",{},function(data){
+						alert(data);
+					});
+				}
 				
+				function countdown () {
+					timeoutWith = setInterval (function(){checkOnline()},	3000);
+				}
+			
+		});
 		</script>
 	
   </body>
