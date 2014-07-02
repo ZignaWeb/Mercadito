@@ -157,7 +157,7 @@
 				
 				function checkOnline () {
 					$.get("http://buzzchat.com.ar/client/checkifonlineadmin.php",{},function(data){
-						alert(data);
+					//	alert(data);
 					});
 				}
 				
