@@ -37,8 +37,8 @@
                           <li><a href="#novedades">Novedades</a></li>
                           <li><a href="#quienessomos">Quienes somos</a></li>
                           <li><a href="#contacto">Contacto</a></li>
-                          <li class=" right  hide-for-small-only"><a class="bchat" href="www.zigna.com.ar">¡Hace tu pedido online!</a></li>
-                           <li class=" show-for-small-only "><a  class="bchat"  href="#">¡Hace tu pedido online!</a></li>
+                          <li class=" right  hide-for-small-only large-2"><div class="circle"></div><a class="bchat right" href="www.zigna.com.ar">¡Hace tu pedido online!</a></li>
+                          <li class=" show-for-small-only "><div class="circle"></div><a  class="bchat"  href="#">¡Hace tu pedido online!</a></li>
                                         
                         </ul>            
             <!-- ************* end-NAV ************** -->            
@@ -123,8 +123,8 @@
 				$(".bchat").click(function(event){
 					event.preventDefault();
 					$(".chat").css("opacity","1").css("height","350px");
-					$(".minimize").css("display","block");
-					$(".close").css("display","block");
+					$(".minimize").css("display","block").css("bottom","325px");
+					$(".close").css("display","block").css("bottom","325px");
 				
 					document.getElementById("#goback").css("display","block");
 					$("#logout").css("display","block");
@@ -157,6 +157,11 @@
 				
 				function checkOnline () {
 					$.get("http://buzzchat.com.ar/client/checkifonlineadmin.php",{},function(data){
+						if(data==0){
+							$(".circle").css("background","red");
+						}else if(data==1){
+							$(".circle").css("background","green");
+						}
 					//	alert(data);
 					});
 				}

@@ -58,7 +58,17 @@ footer{
 .column { 
 					padding-bottom:15px;
 				}
-				
+
+.circle {
+	width: 14px;
+	height: 14px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background: red;
+	margin-top: 10px;
+	float:right;
+}
 /*------------------------------MAIN------------------------------*/
 
 
@@ -297,6 +307,7 @@ logout{
 	right: 10px !important;
 	background:url(../img/close.png) !important;
 }
+
 
 
 /*------------------------------IFRAME------------------------------*/
