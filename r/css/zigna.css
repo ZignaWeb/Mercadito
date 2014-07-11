@@ -133,7 +133,7 @@ header ul.menu-list li:last-child {
 																										padding:15px 0; 
 																										height:105px
 																									}
-.home > ul:nth-child(2) >  li:nth-child(1) { 
+/*.home > ul:nth-child(2) >  li:nth-child(1) { 
 																																 background:url(../img/1.png) left no-repeat
 																																}
 .home > ul:nth-child(2) >  li:nth-child(2) { 
@@ -141,7 +141,7 @@ header ul.menu-list li:last-child {
 																																}
 .home > ul:nth-child(2) >  li:nth-child(3) { 
 																																 background:url(../img/3.png) left no-repeat
-																																}
+																																}*/
 .home > ul:nth-child(2) >  li h2 { 
 																											 font-size:1.3125rem
 																										  }
@@ -359,7 +359,7 @@ logout{
 																						}
 																						
 	@media only screen  and (max-width: 985px) {
-																							.home > ul:nth-child(2) >  li:nth-child(1) { 
+																							/*.home > ul:nth-child(2) >  li:nth-child(1) { 
 																																																							 background:url(../img/1-small.png) left no-repeat !important
 																																																						 }
 																							.home > ul:nth-child(2) >  li:nth-child(2) { 
@@ -367,7 +367,7 @@ logout{
 																																																							}
 																							.home > ul:nth-child(2) >  li:nth-child(3) { 
 																																																							 background:url(../img/3-small.png) left no-repeat !important
-																																																							}
+																																																							}*/
 																						
 																							.home > ul:nth-child(2) >  li h2 { 
 																																																		 font-size:1rem !important
@@ -396,4 +396,10 @@ logout{
 																																										border-left: none;
 																																									}
 																							}
+  .sticker {
+            position: relative;
+						
+        }
+ .sticker-img{ background-image:url(../img/1-small.png)}
+
 	

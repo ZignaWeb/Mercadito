@@ -74,18 +74,36 @@
             </ul>
             
              <ul class="small-12 no-bullet column  ">
-                
-                  <li class="small-12 medium-4 column">
+                <li class="small-12 medium-4 column ">
+                  <div class="small-2 medium-3 left">
+                    <div class="sticker">
+                    </div>
+                  </div>
+                  <div class="small-9">
                   	<h2 class="right small-9 medium-7 large-8">Hace tu orden</h2>
                     <p class="right small-9 medium-7 large-8">Llamanos o chatea con nosotros para hacer tu pedido</p>
-                  </li>
-                <li class="small-12 medium-4 column">
-                  	<h2 class="right small-9 medium-7 large-8">Confirmacion</h2>
-                    <p class="right small-9 medium-7 large-8">Confirma tu compra y monto.Envianos tus datos de envio</p>
-                  </li>
-                 <li class="small-12 medium-4 column">
-                  	<h2 class="right small-9 medium-7 large-8">Pago y Envio</h2>
-                    <p class="right small-9 medium-7 large-8">Defini fecha y hora para el envio y lo pagas cuando lo recibis</p>
+                  </div>
+                  	
+                </li>
+                  <li class="small-12 medium-4 column  ">
+                  <div class="small-2 medium-3 left">
+                      <div class="sticker">
+                      </div>
+                  	</div>
+                  	<div class="small-9">
+                      <h2 class="right small-9 medium-7 large-8">Confirmacion</h2>
+                      <p class="right small-9 medium-7 large-8">Confirma tu compra y monto.Envianos tus datos de envio</p>
+                   	</div>
+                   </li>
+               		 <li class="small-12 medium-4 column  ">
+                  <div class="small-2 medium-3 left">
+                      <div class="sticker">
+                      </div>
+                  	</div>
+                  	<div class="small-9">
+                      <h2 class="right small-9 medium-7 large-8">Pago y Envio</h2>
+                      <p class="right small-9 medium-7 large-8">Defini fecha y hora para el envio y lo pagas cuando lo recibis</p>
+                    </div>
                   </li>	
 						 </ul>
           
@@ -110,8 +128,9 @@
    	 </div>
    
 
-        
+     <script type="text/javascript" src="r/code/sticker.min.js"></script>
 		 <script>
+		 Sticker.init('.sticker');
 	 	jQuery(document).ready(function($){
 		$.daisyNav();
 		});
