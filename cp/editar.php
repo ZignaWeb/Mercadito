@@ -1,4 +1,6 @@
-    <? include("r/html/menuSec.php");?>
+    <? include("r/html/menuSec.php");
+		
+		?>
 	<hr />
    	<div class="column small-12">
         <h1><?=$inline[$lang]["editar"]?>: <?=$secciones[$_GET["q"]]["t"]?></h1>
@@ -88,6 +90,15 @@
 						echo "<input type='radio' $check id='".$val["db"]."$key' name='".$val["db"]."' value='$key' /> <label for='".$val["db"]."$key' >$text</label>";
 					}
 				}
+				elseif($val["type"]=="check"){
+						echo "<div class=' $clase'>";
+						$i=0;
+						foreach($val["options"] as $key => $text){
+							echo "<input type='checkbox' id='".$val["db"]."$key' name='".$val["db"]."[]' value='$key' /> <label for='".$val["db"]."$key' >$text</label>";
+							$i++;
+						}
+						echo "</div>";
+					}		
 				// if true end
 				}else{
 					$dep["tabla"] = $_GET["q"];
@@ -150,13 +161,20 @@
 		foreach ($secciones[$_GET["q"]]["c"] as $val) {
 			$i++;
 			if ($val["val"]!="date") {
-				$postv = $_POST[$val["db"]];
+				if($val["type"]=="check"){
+					$checked = $_POST[$val["db"]];
+					for($j=0; $j < count($checked); $j++){
+							$postv .=$checked[$j];
+						}
+					}else
+					$postv = $_POST[$val["db"]];
 			}else{
 				$postv = date($fDateTime, strtotime(str_replace('-', '/', $_POST[$val["db"]])));
 			}
 			
 			if ($postv!="" && $val["val"]!="file") {
 				if ($i>1){$q.=",";}
+				debug_to_console($psotv);
 				$q.=" `".$val["db"]."`='".$postv."'";
 			}elseif($val["val"]=="file"){
 				array_push($imgs,$val["db"]);
